@@ -8,4 +8,6 @@ RUN powershell -Command \
 	Remove-Item c:\nginx-1.9.13.zip -Force
 WORKDIR /nginx-1.9.13
 ADD name.html 'C:\nginx-1.9.13\html\'
+EXPOSE 80
+EXPOSE 443
 CMD ["/nginx-1.9.13/nginx.exe"]
