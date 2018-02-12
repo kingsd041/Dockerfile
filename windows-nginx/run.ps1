@@ -4,3 +4,5 @@ if($CONTAINER_NAME -eq $NULL){
 Else{
     echo ${CONTAINER_NAME} > 'C:\nginx-1.9.13\html\name.html'
 }
+
+Invoke-Expression "$args"
