@@ -1,6 +1,9 @@
 # Dockerfile  
-## windows-install-ssh-server
+## win-ssh-server
 Install SSH server based on Windows.
 
-## windows-nginx
+## wins-nginx
 Install nginx based on Windows and add the name.html file.
+
+## win-testmultipleport
+Nginx export multiple ports.
