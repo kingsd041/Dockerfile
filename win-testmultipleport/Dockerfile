@@ -8,7 +8,7 @@ RUN powershell -Command \
         Remove-Item c:\nginx-1.9.13.zip -Force
 WORKDIR /nginx-1.9.13
 ADD run.ps1 'C:\'
-ADD nginx.conf 'C:\nginx-1.9.13\'
+ADD nginx.conf 'C:\nginx-1.9.13\conf\'
 EXPOSE 443/tcp 80/tcp 81/tcp 82/tcp 83/tcp 84/tcp 85/tcp 86/tcp 87/tcp 88/tcp 89/tcp 90/tcp 91/tcp
 ENTRYPOINT ["powershell.exe","-file","/run.ps1"]
 CMD ["/nginx-1.9.13/nginx.exe"]
