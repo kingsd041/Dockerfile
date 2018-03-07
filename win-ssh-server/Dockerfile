@@ -12,5 +12,5 @@ RUN powershell -Command \
 		net user /add rancher; \
 		net user rancher WWW.163.com; \
 		Set-Service sshd -startupType automatic
-
-
+ENTRYPOINT ["powershell -Command get-content logs/sshd.log"]
+CMD [" -ReadCount 0 -Tail 5 -Wait"]
