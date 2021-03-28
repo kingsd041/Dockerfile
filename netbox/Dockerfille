@@ -1,0 +1,8 @@
+FROM ubuntu:18.04
+
+# Install.
+RUN \
+  apt update && \
+  apt install -y iproute2 net-tools ethtool && \
+  apt install -y curl git htop man unzip vim wget && \
+  rm -rf /var/lib/apt/lists/*
